@@ -1,4 +1,4 @@
-package src.main.java.com.example;
+package com.example;
 
 public class KMSImplementation implements KMS {
     // Implement all the methods from the KMS interface

@@ -1,4 +1,4 @@
-package src.main.java.com.example;
+package com.example;
 import src.main.java.com.example.BeenzAccount;
 import src.main.java.com.example.Biography;
 

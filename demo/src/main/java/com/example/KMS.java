@@ -1,3 +1,4 @@
+package demo.src.main.java.com.example;
 import javax.management.Notification;
 
 public interface KMS {

@@ -1,3 +1,4 @@
+package demo.src.main.java.com.example;
 public class Notification {
     private String notificationID;
     private String content;

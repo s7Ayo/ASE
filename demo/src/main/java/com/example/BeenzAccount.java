@@ -1,3 +1,4 @@
+package demo.src.main.java.com.example;
 public class BeenzAccount {
     private int beenzPoints;
 

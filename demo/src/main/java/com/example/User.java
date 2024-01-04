@@ -1,3 +1,4 @@
+package demo.src.main.java.com.example;
 public abstract class User {
     private String userID;
     private String name;

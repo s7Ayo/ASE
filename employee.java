@@ -1,52 +1,76 @@
+import path.to.Biography; // Replace 'path.to' with the actual package path
+
+
 public class Employee extends User {
     private String accessLevel;
+    private BeenzAccount beenzAccount; // Ensure this matches the class name
+    private Biography biography; // Composition of Biography
 
-    public Employee(String userID, String name, String email, String password, String accessLevel) {
+
+    // Constructor including Biography
+    public Employee(String userID, String name, String email, String password, String accessLevel, int biographyID) {
         super(userID, name, email, password);
+        this.accessLevel = accessLevel;
+        this.beenzAccount = new BeenzAccount(); // Correct initialization
+        this.biography = new Biography(biographyID, userID); // Initialize Biography
+    }
+
+    // Getters and setters for accessLevel, beenzAccount, and biography
+    public String getAccessLevel() {
+        return accessLevel;
+    }
+
+    public void setAccessLevel(String accessLevel) {
         this.accessLevel = accessLevel;
     }
 
-    // Getter and Setter for accessLevel
-    public String getAccessLevel() { return accessLevel; }
-    public void setAccessLevel(String accessLevel) { this.accessLevel = accessLevel; }
+    public BeenzAccount getBeenzAccount() {
+        return beenzAccount;
+    }
 
+    public Biography getBiography() {
+        return biography;
+    }
+
+    // Implementations of abstract methods from User class
     @Override
     public void updateProfile() {
-        // Implementation
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public void login() {
-        // Implementation
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
     public void logout() {
-        // Implementation
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     @Override
-    public void accessProject() {
-        // Implementation
+    public void accessProject(String projectID) {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    // Employee-specific methods
     public void updateContent() {
-        // Implementation
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    public void earnBeenz() {
-        // Implementation
+    public void earnbeenz() {
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     public void searchEmployee() {
-        // Implementation
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     public void editDocument() {
-        // Implementation
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 
     public void submitDocument() {
-        // Implementation
+        throw new UnsupportedOperationException("Not supported yet.");
     }
 }

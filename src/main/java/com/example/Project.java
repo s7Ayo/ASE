@@ -1,4 +1,4 @@
-package demo.src.main.java.com.example;
+package src.main.java.com.example;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;

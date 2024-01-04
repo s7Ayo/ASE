@@ -1,6 +1,6 @@
-package demo.src.main.java.com.example;
-import path.to.Biography; // Replace 'path.to' with the actual package path
-
+package src.main.java.com.example;
+import src.main.java.com.example.BeenzAccount;
+import src.main.java.com.example.Biography;
 
 public class Employee extends User {
     private String accessLevel;
